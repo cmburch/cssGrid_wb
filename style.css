@@ -2,11 +2,20 @@ body {
   margin: 40px;
 }
 
-.wrapper {
+/* .wrapper {
         display: grid;
     grid-gap: 10px;
         grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
         grid-template-rows: [row] auto [row] auto [row] ;
+        background-color: #fff;
+        color: #444;
+    } */
+
+    .wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(4, [col] 100px ) ;
+        grid-template-rows: repeat(3, [row] auto  );
         background-color: #fff;
         color: #444;
     }
